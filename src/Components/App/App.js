@@ -31,20 +31,20 @@ const App = () => {
         setPlaylistName(name)
     }
 
-    // const savePlaylist = () => {
-    //     const trackURIs = playlistTracks.map(track => track.uri);
-    //     Spotify.savePlaylist(playlistName, trackURIs);
-    //         setPlaylistName('New Playlist');
-    //         setPlaylistTracks([]);
-    // }
-
     const savePlaylist = () => {
-        const trackUris = playlistTracks.map(track => track.uri);
-        Spotify.savePlaylist(playlistName, trackUris).then(() => {
+        const trackURIs = playlistTracks.map(track => track.uri);
+        Spotify.savePlaylist(playlistName, trackURIs);
             setPlaylistName('New Playlist');
             setPlaylistTracks([]);
-        });
-      }
+    }
+
+    // const savePlaylist = () => {
+    //     const trackUris = playlistTracks.map(track => track.uri);
+    //     Spotify.savePlaylist(playlistName, trackUris).then(() => {
+    //         setPlaylistName('New Playlist');
+    //         setPlaylistTracks([]);
+    //     });
+    // }
     
     
 
