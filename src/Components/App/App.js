@@ -38,16 +38,6 @@ const App = () => {
             setPlaylistTracks([]);
     }
 
-    // const savePlaylist = () => {
-    //     const trackUris = playlistTracks.map(track => track.uri);
-    //     Spotify.savePlaylist(playlistName, trackUris).then(() => {
-    //         setPlaylistName('New Playlist');
-    //         setPlaylistTracks([]);
-    //     });
-    // }
-    
-    
-
     const search = async (term) => {
         const search = await Spotify.search(term);
         setSearchedTracks(search);
