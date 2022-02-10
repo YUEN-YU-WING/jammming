@@ -1,6 +1,6 @@
 let accessToken;
 const cliendId = 'f30a6f538f754ab39de16ca6262fd1fa';
-const redirectUri = 'http://localhost:3000/';
+const redirectUri = 'https://yuen-yu-wing.github.io/jammming/';
 
 const Spotify = {
     getAccessToken() {
