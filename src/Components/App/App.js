@@ -48,6 +48,9 @@ const App = () => {
             <h1>Ja<span className="highlight">mmm</span>ing</h1>
             <div className="App">
                 <SearchBar onSearch={search}/>
+                <div className="App-playlist">
+                    <SearchResults searchedTracks={searchedTracks} onAdd={addTrack}/>
+                </div>
             </div>
         </div>
     )
