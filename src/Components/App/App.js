@@ -46,13 +46,7 @@ const App = () => {
     return (
         <div>
             <h1>Ja<span className="highlight">mmm</span>ing</h1>
-            <div className="App">
-                <SearchBar onSearch={search}/>
-                <div className="App-playlist">
-                    <SearchResults searchedTracks={searchedTracks} onAdd={addTrack}/>
-                    <Playlist playlistName={playlistName} playlistTracks={playlistTracks} onRemove={removeTrack} onNameChange={updatePlaylistName} onSave={savePlaylist}/>
-                </div>
-            </div>
+            
         </div>
     )
 }
