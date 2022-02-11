@@ -50,6 +50,7 @@ const App = () => {
                 <SearchBar onSearch={search}/>
                 <div className="App-playlist">
                     <SearchResults searchedTracks={searchedTracks} onAdd={addTrack}/>
+                    <Playlist playlistName={playlistName} playlistTracks={playlistTracks} onRemove={removeTrack} onNameChange={updatePlaylistName} onSave={savePlaylist}/>
                 </div>
             </div>
         </div>
